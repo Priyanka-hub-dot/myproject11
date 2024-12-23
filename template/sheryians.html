@@ -1,0 +1,252 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheryians Coding School | Learn Coding in India</title>
+    <link rel="stylesheet" href="{% static 'css/sheryians.css' %}">
+</head>
+<body>
+    <header>
+        <nav style="width: 100%;height: 100px;background-color: transparent;">
+            <a href="{% url 'app1:sheryians' %}" id="name"> 🦁Sheryians coding school</a>
+            <a href="{% url 'app1:home' %}" class="buttons">Home</a>
+            <a href="{% url 'app1:courses' %}" class="buttons">Courses</a>
+            <a href="{% url 'app1:bootcamp' %}" class="buttons">Bootcamp(Kodr)</a>
+            <a href="{% url 'app1:request_callback' %}" class="buttons">Request Callback</a>
+            <a href="{% url 'app1:signin' %}" class="buttons" id="signIn_button">Sign In</a>
+        </nav>
+    </header>
+    {% block  body %}
+
+    <div>
+        <p style="text-align: center;color:aliceblue;font-size: 80px;margin-top: 80px;font-family: NeueMachina;line-height: 69px;font-weight: lighter ;">
+            We only <span style="color:#24cfa6;">teach</span><br>
+            what we are really <br>
+            really <i style="font-family:cursive;">good</i> at.
+        </p>
+        <div style="color: white;width: 190px;height: 100px;font-size: 14px;position:absolute;top: 380px;right:230px;font-weight: lighter;line-height:15px;">
+            Get ready to <span style="color: #24cfa6;">accelerate your career </span>with customized courses and leave your mark in the tech industry
+        </div>
+        <a style="padding: 15px 35px;background-color: #24cfa6;border-radius: 10px;position: relative;top:80px;left: 40%;font-size: 20px;text-decoration: none;color: black;font-family: 'Helvetica';" href="{% url 'app1:courses' %}">
+            Check Courses-Make an Impact
+        </a>
+    </div>
+    <div style="position: relative;top: 130px;font-family: NeueMachina;">
+        <div class="users" style="transform: translate(-250px);">
+            <b style="font-size: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                25k+
+            </b> <br>
+            Students taught
+        </div><br>
+        <div class="users">
+            <b style="font-size: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                20+
+            </b><br>
+            Instructors
+        </div><br>
+        <div class="users" style="transform: translate(250px);">
+            <b style="font-size: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                431k+
+            </b><br>
+            Youtube Subs.
+        </div><br>
+    </div>
+    <div>
+        <p style="padding-left:450px;color: white;font-size: 38px;margin-top: 400px;font-family: NeueMachina;">
+            we do whatever it takes to help you <br>
+            <span style="color: #24cfa6;line-height:30px ;padding-left: 100px;">understand the concepts.</span>
+        </p>
+    </div>
+    <div style="width: 100%;height:600px ;padding-left: 150px;margin-top: 30px;">
+        <iframe width="656" height="369" src="https://www.youtube.com/embed/60SRAWmMXyc" title="You Are Not Yet Ready | Placements | Open Source" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video"></iframe>
+        <a href="ww.youtube.com" id="explore" style="padding: 15px 35px;">Explore free learning</a>
+    </div>
+ <br><br><br>
+ 
+    <span style="font-family: NeueMachina;color: white;font-size: 40px;padding-left: 50px;">
+        Courses Offered.
+    </span><br><br><br>
+
+
+
+    <div style=" width:100%;height: 300px;"> 
+      <div style="float: left;background-color: black;">
+        <img src="/static/images/image1.webp" alt="Image 1" style="width:350px;height: 250px;border-radius: 10px;margin-left: 30px;" >
+        <p style="color: white;font-size: 30px;padding-left: 30px;word-break:3px;line-height:35px;font-weight: lighter;">Front-End Domination:
+          <br>Creat Anything with Code
+        </p><br>
+        <a href=""><h3 style="color: white;text-decoration: none;padding-left: 50px;font-weight: lighter;">HINDI</h3></a>
+
+        <p style="color: #24cfa6;font-weight: lighter;padding-left: 30px;">Limited Time Discount</p>
+        <h3 style="color: white;float: left;padding-left: 45px;">₹4999 </h3> <strike style="color: gray;float: left;padding-left: 45px;">₹9999</strike>
+        <a href="{% url 'app1:courses' %}" style="width: 60px;height:30px;color: black;background-color:white;margin-left: 60px;border-radius:10%;text-decoration: none;">
+          50%    OFF
+      </a>
+      </div>
+      
+      <div  style="float: left;background-color: black;">
+        <img src="/static/images/image2.webp" alt="Image 2"  style="width:350px;height: 250px;border-radius: 10px;margin-left: 15px;" >
+        <p style="color: white;font-size: 30px;padding-left: 30px;line-height:35px;font-weight: lighter;">Back-End Domination:
+          <br> Creat Efficient Back-End
+        </p><br>
+        
+        <a href=""><h3 style="color: white;text-decoration: none;padding-left: 60px;font-weight: lighter;">HINDI</h3></a>
+        <p style="color: #24cfa6;font-weight: lighter;padding-left: 30px;">Limited Time Discount</p>
+        <h3 style="color: white;float: left;padding-left: 45px;">₹5999 </h3> <strike style="color: gray;float: left;padding-left: 45px;">₹11999</strike>
+        <a href="{% url 'app1:courses' %}" style="width: 60px;height:30px;color: black;background-color:white;margin-left: 60px;border-radius:10%;text-decoration: none;">
+          50%    OFF
+      </a>
+
+      </div>
+        <div  style="float: left;background-color: black;">
+          <img src="/static/images/images3.jpg" alt="Image 3"  style="width:350px;height: 250px;border-radius: 10px;margin-left: 15px;"  >
+          <p style="color: white;font-size: 30px;padding-left: 30px;line-height:35px;font-weight: lighter;">Aptitude & Reasoning For <br>
+            Campus Placements
+
+          </p><br>
+          <a href=""><h3 style="color: white;text-decoration: none;padding-left: 50px;font-weight: lighter;">HINGLISH</h3></a>
+          <p style="color: #24cfa6;font-weight: lighter;padding-left: 30px;">Limited Time Discount</p>
+          <h3 style="color: white;float: left;padding-left: 45px;">₹999 </h3> <strike style="color: gray;float: left;padding-left: 45px;">₹1500</strike>
+          <a href="{% url 'app1:courses' %}" style="width: 60px;height:30px;color: black;background-color:white;margin-left: 60px;border-radius:10%;text-decoration: none;">
+            50%    OFF
+        </a>
+        </div>
+        <div style="float: left;background-color: black;height: 470px;">
+          <img src="/static/images/image5.webp" alt="Image 4" style="width:350px;height: 250px;border-radius: 10px;margin-left: 15px;"  >
+          <p style="color: white;font-size: 30px;padding-left: 30px;line-height:35px;font-weight: lighter;">Java & DSA Domination</p><br>
+          <a href=""><h3 style="color: white;text-decoration: none;padding-left: 50px;font-weight: lighter;">HINGLISH</h3></a><br>
+          <p style="color: #24cfa6;font-weight: lighter;padding-left: 30px;">Limited Time Discount</p>
+          <h3 style="color: white;float: left;padding-left: 45px;">₹4999 </h3> <strike style="color: gray;float: left;padding-left: 45px;">₹9999</strike>
+          <a href="{% url 'app1:courses' %}" style="width: 60px;height:30px;color: black;background-color:white;margin-left: 60px;border-radius:10%;text-decoration: none;">
+            50%    OFF
+        </a>
+        </div>
+      </div><br><br><br><br><br><br><br><br>
+
+
+      <div >
+        <div style="float: left;padding-left: 30px;">
+           <a  style="width: 200px;padding: 10px 70px;background-color: #24cfa6;border-radius: 10px;font-size: 20px;text-decoration: none;color: black;font-family: 'Helvetica';" href="{% url 'app1:courses' %}">View Details</a>  
+           </div>
+           <div style="float: left;padding-left: 120px;">
+            <a  style="width: 200px;padding: 10px 70px;background-color: #24cfa6;border-radius: 10px;font-size: 20px;text-decoration: none;color: black;font-family: 'Helvetica';" href="{% url 'app1:courses' %}">View Details</a>  
+          </div>
+            <div style="float: left;padding-left: 190px;">
+              <a  style="width: 200px;padding: 10px 70px;background-color: #24cfa6;border-radius: 10px;font-size: 20px;text-decoration: none;color: black;font-family: 'Helvetica';" href="{% url 'app1:courses' %}">View Details</a>  
+            </div>
+              <div style="float: left;padding-left: 100px;">
+                <a  style="width: 200px;padding: 10px 70px;background-color: #24cfa6;border-radius: 10px;font-size: 20px;text-decoration: none;color: black;font-family: 'Helvetica';" href="{% url 'app1:courses' %}">View Details</a>  
+              </div>
+               
+
+</div><br><br><br><br>
+
+
+
+
+<div >
+  <div  style="float: left;background-color: black;border-radius: 10px; width:100%">
+    <img src="/static/images/images 6.jpg" alt="Image 3"  style="width:350px;height: 200px;border-radius: 10px;margin-left: 15px;"  >
+    <p style="color: white;font-size: 30px;padding-left: 20px;line-height:25px;font-weight: lighter;">Aptitude & Reasoning For <br>
+      Campus Placements
+
+    </p><br>
+    <a href=""><h3 style="color: white;text-decoration: none;padding-left: 50px;font-weight: lighter;">HINDI</h3></a>
+    <p style="color: #24cfa6;font-weight: lighter;padding-left: 30px;">Limited Time Discount</p>
+    <h3 style="color: white;float: left;padding-left: 45px;">₹999 </h3> <strike style="color: gray;float: left;padding-left: 45px;">₹1500</strike>
+    <a href="{% url 'app1:courses' %}" style="width: 60px;height:30px;color: black;background-color:white;margin-left: 60px;border-radius:10%;text-decoration: none;">
+      29%    OFF
+  </a>
+  </div>
+  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+  <div>
+    <div style="padding-left: 40px;"><br>
+      <a  style="width: 200px;padding: 10px 60px;background-color: #24cfa6;border-radius: 10px;font-size: 20px;text-decoration: none;color: black;font-family: 'Helvetica';" href="{% url 'app1:courses' %}">View Details</a>  
+      </div>
+  </div><br><br><br><br><br>
+
+  
+    
+  
+
+    
+    <h2 id="companies"> Top <span style="color: #24cfa6;">companies</span> our students 
+        <br>working with
+    </h2><br><br><br>
+    <span>
+
+    <img src="/static/images/images.jpg"alt=""            style="width:150px;height:100px;   padding-left: 400px;"    >
+    <img src="/static/images/mindtree-logo.jpg" alt=""            style="width:150px;height:100px;padding-left:  150px;"    >
+    <img src="/static/images/walmart_1-preview.jpg" alt=""style="width:150px; height:100px;    padding-left: 300px;padding-left: 150px; "     ><br><br><br><br><br><br>
+    <img src="/static/images/rapido.png" alt=""           style="width:150px;padding-left: 100px;"     >
+    <img src="/static/images/tcs.png" alt=""           style="width:200px;padding-left: 100px;"     >
+    <img src="/static/images/amazon page1.png" alt=""           style="width:150px;padding-left: 100px;"     >
+    <img src="/static/images/wipro.png" alt=""           style="width:150px;padding-left: 100px;"     >
+    <img src="/static/images/geek.png" alt=""           style="width:150px;padding-left: 150px;"     >
+
+
+
+    </span>
+
+    </div><br><br><br><br><br><br><br>
+    <div>
+      <div style="text-align: center;">
+        <a  style="width: 600px;padding: 20px 50px;background-color: #1de1b4;border-radius: 10px;font-size: 20px;text-decoration: none;color: black;font-family: 'Helvetica';" href="{% url 'app1:courses' %}">Explore Courses</a>  
+        </div>
+    </div>
+
+    
+      
+    {% endblock body %}
+
+
+
+
+
+    <footer>
+      <div>
+          <img src="/static/images/lion.png" alt="" id="lion_footer">
+          <p  style="color: white;margin-left: 70px;">Let's connect with our socials</p><br>
+        
+  <img src="/static/images/instagramlogo.webp" alt="" style="width:30px;height: 30px;margin-left: 50px;">
+  <img src="/static/images/linkedin.webp" alt="" style="width:30px;height: 30px;margin-left: 25px;">
+  <img src="/static/images/discard logo.webp" alt="" style="width:30px;height: 30px;margin-left: 25px;">
+  <img src="/static/images/youtube.webp" alt="" style="width:30px;height: 30px;margin-left: 25px;">
+  <img src="/static/images/twitter-.webp" alt="" style="width:30px;height: 30px;margin-left: 25px;">
+      </div>
+      <div id="company_footer">
+          <h3 style="margin-bottom: 30px;">COMPANY</h3>
+          <a href="" class="footer_elements">About Us</a><br><br>
+          <a href="" class="footer_elements">Support</a><br><br>
+          <a href="" class="footer_elements">Privacy Policy</a><br><br>
+          <a href="" class="footer_elements">Terms and Condition</a><br><br>
+          <a href="" class="footer_elements">Pricing and Refund</a><br><br>
+          <a href="" class="footer_elements">Hire From Us</a><br><br>
+          <a href="" class="footer_elements">Bug Bounty</a><br><br>
+      </div>
+      <div id="community_footer">
+          <h3 style="margin-bottom: 30px;">COMMUNITY</h3>
+          <a href="" class="footer_elements">Inertia</a><br><br>
+          <a href="" class="footer_elements">Discord</a><br><br>
+      </div>
+      <div id="get_in_touch_footer">
+          <h3 style="margin-bottom: 30px;">Get In Touch</h3>
+          <a href="" class="footer_elements">+91 8109161752,</a><br><br>
+          <a href="" class="footer_elements">+91 9691778470</a><br><br>
+          <a href="" class="footer_elements">hello@sheryians.com</a><br>
+          <a href="" class="footer_elements">23-B,Indrapuri Sector C,</a><br><br>
+      </div>
+      <h2 style="text-align: center;color: white;font-size: 15px;margin-top: 240px;">
+          Copyright © 2024 Sheryians Pvt.Ltd. <br> All Rights Reserved.
+      </h2><br><br>
+    </footer>
+
+
+
+</body>
+</html>

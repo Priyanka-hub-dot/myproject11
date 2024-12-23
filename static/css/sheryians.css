@@ -1,0 +1,213 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: NeueMachina;
+    src: url(/static/fonts/NeueMachina-Light.otf);
+}
+body{
+    background-image: linear-gradient(85deg,rgba(16, 16, 16, 0.893),black);
+}
+.buttons{
+    position: relative;
+    top: 30px;
+    left: 650px;
+    padding: 20px;
+    font-weight: lighter;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    
+}
+#name{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    top: 30px;
+    left: 85px;
+    font-family: NeueMachina;
+}
+#signIn_button{
+    background-color: #24cfa6;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Helvetica';
+}
+.users{
+    color: white;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 43%;
+    top: 70px;
+    text-align: center;
+    font-size: 20px;
+
+}
+#video{
+    width: 900px;
+    height: 450px;
+    position: relative;
+    top: 30px;
+    left: 200px;
+    border-radius: 30px;
+}
+#explore{
+    background-color: #24cfa6;
+    padding: 10px 35px;
+    border-radius: 10px;
+    position: relative;
+    top:100px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Helvetica';
+    color: black;
+    left: -400px;
+}
+#companies{
+    font-family: NeueMachina;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 38px;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  position: relative;
+  top: 200px;
+  border-top: 0.5px solid rgb(217, 210, 210);
+  border-bottom: 0.5px solid rgb(190, 180, 180);
+  height: 450px;
+  font-family: 'Helvetica';
+}
+#company_footer,#community_footer,#get_in_touch_footer{
+  width: 200px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  color: white;
+  top: 100px;
+  font-family: 'Helvetica';
+  font-size: 13px;
+  font-weight: lighter;
+
+}
+#company_footer{
+  transform: translate(-130px);
+}
+#community_footer{
+  transform: translate(130px);
+}
+#get_in_touch_footer{
+  transform: translate(400px);
+}
+.footer_elements{
+  text-decoration: none;
+  color: white;
+}
+.footer_elements:hover{
+  color: #24cfa6;
+}
+#lion_footer{
+  width: 40px;
+  margin-left: 70px;
+  margin-top: 150px;
+  margin-bottom:10px;
+}
+
+
+
+
+
+ .video-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-left, .video-right {
+  flex: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
